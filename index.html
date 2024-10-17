@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockchain Voting System</title>
+    <!-- Include Ethers.js via a reliable CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.6.4/ethers.umd.min.js"></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <h1>Blockchain Voting System</h1>
+    <button id="connectButton">Connect MetaMask</button>
+    <p id="account"></p>
+
+    <!-- Voting section -->
+    <div id="votingSection" style="display: none">
+      <h2>Cast Your Vote</h2>
+      <select id="candidateSelect">
+        <option value="0">Candidate 1</option>
+        <option value="1">Candidate 2</option>
+        <option value="2">Candidate 3</option>
+      </select>
+      <button id="voteButton">Vote</button>
+      <p id="voteStatus"></p>
+    </div>
+
+    <!-- Votes display section -->
+    <div id="votesDisplay">
+      <h2>Votes Count</h2>
+      <ul id="votesList"></ul>
+    </div>
+  </body>
+</html>
